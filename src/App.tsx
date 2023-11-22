@@ -3,6 +3,8 @@ import TodoList from "./components/TodoList";
 import NewTodoForm from "./components/NewTodoForm";
 import {useAppDispatch} from "./hooks/hooks";
 import {addTodo} from "./store/todoSlice";
+import Todos from "./components/Todos";
+import {nanoid} from "@reduxjs/toolkit";
 
 function App() {
     const [text, setText] = useState<string>('');
@@ -17,12 +19,13 @@ function App() {
 
     return (
         <div>
-            <NewTodoForm
-                value={text}
-                updateText={setText}
-                handleAction={handleAction}
-            />
-            <TodoList />
+            {/*<NewTodoForm*/}
+            {/*    value={text}*/}
+            {/*    updateText={setText}*/}
+            {/*    handleAction={handleAction}*/}
+            {/*/>*/}
+            {/*<TodoList />*/}
+            <Todos />
         </div>
     );
 }

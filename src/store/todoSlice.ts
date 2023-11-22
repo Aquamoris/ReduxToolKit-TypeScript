@@ -1,4 +1,4 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {createSlice, PayloadAction, createAsyncThunk} from "@reduxjs/toolkit";
 
 interface Todo {
     id: string,
